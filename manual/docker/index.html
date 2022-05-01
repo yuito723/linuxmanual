@@ -54,10 +54,17 @@
       > gnupg \<br>
       > lsb-release<br>
       ================================================================<br>
-      $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+      $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg<br>
+      ================================================================<br>
+      $ echo \<br>
+      > "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \<br>
+      > $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null<br>
       ================================================================<br>
       <br>
-
+      ・Docker Engineをインストールする<br>
+      ================================================================<br>
+      <br>
+      ================================================================<br>
       </p>
       <p>[Ubuntu]<br>
       </p>
