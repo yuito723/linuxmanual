@@ -17,7 +17,8 @@ p { font-size: 30px;
     color: black;
     text-align: left; }
 iframe { width: 100%; }
-.link { color: #ffc000; } 
+.link { color: #ffc000; }
+.cmd { background-color: black; }
 .side-blank { max-width:100%;
               padding: 0 150px;
               margin-left: auto;
